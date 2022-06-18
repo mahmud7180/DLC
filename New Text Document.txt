@@ -1,0 +1,40 @@
+charging and dischargING of astable mood of 555 timer
+
+Initially, when the power is just turned on,
+the capacitor (C1) remain uncharged and
+thus the trigger (pin 2) and threshold (pin
+6) is at 0V. So, output of comparator A is 0
+and comparator B is 1. Thus, Q1 is OFF.
+• Now, C1 begins charging through R1 and
+R2, indicated in THE Figure. When C1 is just
+below 1/3 VCC, the output of comparator B
+is 1 and the flip-flop is set. Thus, the
+output (pin3) is 1.
+• The transistor Q1 is OFF.
+• When C1 charges beyond 1/3 VCC, then
+the output of comparator B is 0. However,
+the output (pin3) is still 1 and the
+transistor is still OFF.
+• So during the charging phase the output
+(pin3) of the 555 timer remains HIGH.Once the 
+voltage of the C1 is just beyond
+2/3 VCC, the output of the comparator A
+becomes 1.
+• This resets the flip-flop. Thus the output
+(pin3) is 0. However, Q1 turns on and the
+capacitor starts discharging.
+• Once the voltage of C1 is below 2/3 VCC,
+the output of the comparator A becomes
+0. However, the capacitor still discharges.
+And the output (pin 3) remains 0.
+• Therefore, during the discharge phase the
+output of the 555 time is 0.
+• When the capacitor C1 discharges just
+below 1/3 VCC, the output of the
+comparator becomes 1 and the flip-flop is
+again set.
+• Thus, again the charging cycle begins.
+
+
+
+The 555 timer IC is an integrated circuit (chip) used in a variety of timer, delay, pulse generation, and oscillator applications
